@@ -55,7 +55,7 @@ document.querySelector(".signup-form").addEventListener("submit", function (e) {
   usersList.push(new User(email, password, dob));
 });
 
-// OPTIONAL
+
 document.querySelector(".google").addEventListener("submit", (googleUser) => {
   var profile = googleUser.getBasicProfile();
   let email = profile.getEmail();
@@ -84,5 +84,5 @@ function showSlides() {
   }
   slides[slideIndex].style.display = "block";
   slideIndex++;
-  setTimeout(showSlides, 4000); // can adjust timings as per requirements
+  setTimeout(showSlides, 4000); 
 }
